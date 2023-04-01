@@ -1,13 +1,12 @@
+import "./infoSectionFooter.css";
 import React, { Component } from "react";
 import { connect } from "react-redux";
-
-import "./infoSectionFooter.css";
 
 class InfoSectionFooter extends Component {
   render() {
     return (
       <div className="info-wrapper">
-        <label htmlFor=""><i className="fal fa-image pr-2" /> Tamanho:</label>
+        <label htmlFor=""><i className="fal fa-image pr-2" /> Size:</label>
         {`${this.props.width} x ${this.props.height}`}
       </div>
     );

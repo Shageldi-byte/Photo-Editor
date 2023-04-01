@@ -1,23 +1,21 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import HTML5Backend from "react-dnd-html5-backend";
-import { DragDropContext } from "react-dnd";
-
 import "./assets/css/App.css";
-
+import AddImageScreen from "./pages/AddImage";
+import BlurSlider from "./components/sliders/BlurSlider";
+import BrightnessSlider from "./components/sliders/BrightnessSlider";
+import Canvas from "./pages/Canvas";
+import ContrastSlider from "./components/sliders/ContrastSlider";
+import CropSection from "./components/CropSection";
+import Footer from "./components/Footer";
+import HTML5Backend from "react-dnd-html5-backend";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import Canvas from "./pages/Canvas";
-import BrightnessSlider from "./components/sliders/BrightnessSlider";
-import ContrastSlider from "./components/sliders/ContrastSlider";
-import BlurSlider from "./components/sliders/BlurSlider";
-import SaturateSlider from "./components/sliders/SaturateSlider";
-import ReturnDefaultButton from "./components/sliders/ReturnDefaultButton";
+import React, { Component } from "react";
 import ResizeSection from "./components/ResizeSection";
+import ReturnDefaultButton from "./components/sliders/ReturnDefaultButton";
 import RotateSection from "./components/RotateSection";
-import Footer from "./components/Footer";
-import CropSection from "./components/CropSection";
-import AddImageScreen from "./pages/AddImage";
+import SaturateSlider from "./components/sliders/SaturateSlider";
+import { DragDropContext } from "react-dnd";
+import { connect } from "react-redux";
 
 class App extends Component {
   constructor(props) {
@@ -76,8 +74,8 @@ class App extends Component {
           )}
         </div>
         <div className="mobile">
-          <h1 className="no-responsive-text">A versão mobile está em desenvolvimento</h1>
-          <span className="no-responsive-text" style={{fontWeight: 300, fontSize: 16, filter: "brightness(60%)"}}>Resolução mínima é 1100px</span>
+          <h1 className="no-responsive-text">The mobile version is under development</h1>
+          <span className="no-responsive-text" style={{fontWeight: 300, fontSize: 16, filter: "brightness(60%)"}}>Minimum resolution is 1100px</span>
         </div>
       </div>
     );

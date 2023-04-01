@@ -1,8 +1,8 @@
-import React from "react";
 import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
+import React from "react";
 import Slider from "@material-ui/core/Slider";
+import Typography from "@material-ui/core/Typography";
+import { withStyles } from "@material-ui/core/styles";
 import { connect } from "react-redux";
 
 const styles = {
@@ -23,7 +23,7 @@ class BrightnessSlider extends React.Component {
         {this.props.showSlider ? (
           <div className={classes.root}>
             <Typography id="label" style={{ color: "white" }}>
-              Exposição: {Math.floor(this.props.value)}
+              Exhibition: {Math.floor(this.props.value)}
             </Typography>
             <Slider
               classes={{ container: classes.slider }}

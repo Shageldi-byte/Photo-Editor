@@ -1,7 +1,6 @@
+import "./styles.css";
 import React, { Component } from "react";
 import { connect } from "react-redux";
-
-import "./styles.css";
 
 class CropSection extends Component {
   render() {
@@ -11,10 +10,10 @@ class CropSection extends Component {
           <div className="crop-section">
             <div className="left-section">
               <label className="label label-resize" htmlFor="resize-width">
-                Largura:
+                Width:
               </label>
               <label className="label label-resize" htmlFor="resize-height">
-                Altura:
+                Height:
               </label>
             </div>
 
@@ -34,7 +33,7 @@ class CropSection extends Component {
             className="btn btn-primary btn-block btn-crop-section"
             onClick={() => this.props.handleCropImage(this.props.cropImage)}
           >
-            Cortar
+            Cut
           </button>
         </div>
       );

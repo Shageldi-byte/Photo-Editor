@@ -1,9 +1,8 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { DropTarget } from "react-dnd";
-
 import "./styles.css";
 import CropElement from "../../components/CropElement";
+import React, { Component } from "react";
+import { DropTarget } from "react-dnd";
+import { connect } from "react-redux";
 
 const canvasTarget = {
   drop(monitor, component) {

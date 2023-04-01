@@ -1,11 +1,10 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { NativeTypes } from "react-dnd-html5-backend";
-import { DropTarget } from "react-dnd";
-import Spinner from "react-bootstrap/Spinner";
-
-import Splash from "../Splash";
 import "./styles.css";
+import React, { Component } from "react";
+import Spinner from "react-bootstrap/Spinner";
+import Splash from "../Splash";
+import { DropTarget } from "react-dnd";
+import { NativeTypes } from "react-dnd-html5-backend";
+import { connect } from "react-redux";
 
 const nativeFileTarget = {
   hover(props, monitor, component) {
@@ -101,8 +100,8 @@ class WelcomeScreen extends Component {
                       className="fal fa-image"
                       style={{ fontSize: 75, marginBottom: 25 }}
                     />
-                    <h3>Arraste e solte para fazer upload</h3>
-                    <span style={{ fontSize: 17 }}>ou clique aqui</span>
+                    <h3>Drag and drop to upload</h3>
+                    <span style={{ fontSize: 17 }}>or click here</span>
                   </div>
                 )}
               </div>

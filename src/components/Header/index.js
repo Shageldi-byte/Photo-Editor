@@ -1,7 +1,6 @@
+import "./header.css";
 import React, { Component } from "react";
 import { connect } from "react-redux";
-
-import "./header.css";
 
 class Header extends Component {
   onImageChange(event) {
@@ -35,7 +34,7 @@ class Header extends Component {
             style={{ cursor: "pointer", fontSize: 12 }}
           >
             <i className="fal fa-lg fa-file-upload pr-2" style={{fontSize: 20, marginTop: 3}} />
-            Nova imagem
+            New image
           </div>
           <input
             type="file"
@@ -61,7 +60,7 @@ class Header extends Component {
                 data-placement="bottom"
                 title="Salvar imagem"
               >
-                Salvar imagem
+                Save Image
                 <i className="fal fa-file-download fa-lg pl-2" />
               </button>
             ) : null}

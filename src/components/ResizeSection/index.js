@@ -1,7 +1,6 @@
+import "./resizeSection.css";
 import React, { Component } from "react";
 import { connect } from "react-redux";
-
-import "./resizeSection.css";
 
 class ResizeSection extends Component {
   constructor(props) {
@@ -36,10 +35,10 @@ class ResizeSection extends Component {
           <div className="resize-section">
             <div className="left-section">
               <label className="label label-resize" htmlFor="resize-width">
-                Largura:
+                Width:
               </label>
               <label className="label label-resize" htmlFor="resize-height">
-                Altura:
+                Height:
               </label>
             </div>
 
@@ -78,7 +77,7 @@ class ResizeSection extends Component {
               this.props.submitResizeValues(this.state.width, this.state.height)
             }
           >
-            Aplicar
+            To apply
           </button>
         </div>
       );

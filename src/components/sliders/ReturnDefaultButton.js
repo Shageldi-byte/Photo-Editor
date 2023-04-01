@@ -18,7 +18,7 @@ class ReturnDefaultButton extends React.Component {
               }}
               onClick={this.props.handleReturnDefaultButton}
             >
-              Redefinir imagem
+              reset image
             </button>
           </div>
         ) : null}
